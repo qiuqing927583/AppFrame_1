@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">移动框架1</string>
+    <string name="app_name">智慧政协</string>
     <string name="systemtitle1">安全保密管理规定</string>
     <string name="systemtitle2">　　本系统为非涉密内部办公系统，请您严格遵守以下规定：</string>
     <string name="systemtitle3">　　1. 不得用本系统处理和传输涉及国家秘密和高度敏感的文件和信息；</string>
