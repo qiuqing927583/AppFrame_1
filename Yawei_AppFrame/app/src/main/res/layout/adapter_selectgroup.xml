@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ReSelect_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+    <TextView
+        android:id="@+id/group_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="5.0dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:text="青岛市电子政务和"
+        android:textSize="18sp" />
+      <TextView
+            android:id="@+id/group_Type"
+            android:layout_width="0.0dp"
+            android:layout_height="0.0dp"
+            android:visibility="gone" >
+        </TextView>
+        <TextView
+            android:id="@+id/group_Guid"
+            android:layout_width="0.0dp"
+            android:layout_height="0.0dp"
+            android:visibility="gone" >
+        </TextView>
+
+</RelativeLayout>

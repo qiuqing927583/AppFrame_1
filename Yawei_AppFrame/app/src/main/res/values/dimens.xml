@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="button_height">45.0dip</dimen>
+    <dimen name="bottom_tab_font_size">16.0dip</dimen>
+    <dimen name="message_tab_font_size">15.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">2.0dip</dimen>
+    <dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+    <dimen name="switch_logo_bottom_padding">30.0sp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="shadow_width">5dp</dimen>
+    <dimen name="activity_btn_height_login_and_register">40dp</dimen>
+    <dimen name="activity_Textsize20_4.0">20sp</dimen>
+    <dimen name="activity_main_tab_title_height">45dp</dimen>
+    <dimen name="activitytitleHeight">50.0dp</dimen><!-- activity头部宽度 -->
+    <dimen name="titletextsize">14.0sp</dimen><!-- 标题按钮文字的大小  -->
+    <dimen name="titleroottextsize">20.0sp</dimen><!-- 标题文字的大小  -->
+    <dimen name="logintextsize">18sp</dimen><!-- 登录界面，登录按钮字体大小 -->
+    <dimen name="settingimghight">32dp</dimen><!-- 个人中心中每个功能前面图标的高 -->
+    <dimen name="settingimgwidth">32dp</dimen><!-- 个人中心图标宽度 -->
+    <!-- 收文管理二级图标 -->
+    <dimen name="expandablechildheight">35dp</dimen><!-- 收文管理二级图标高度 -->
+    <dimen name="expandablechildwidth">35dp</dimen><!-- 收文管理二级图标宽度 -->
+    <dimen name="loaddynamicbutwidth">18px</dimen><!-- 轻应用动态创建button -->
+    <dimen name="loaddynamicbutheight">18px</dimen>
+    <dimen name="mainv2toptitleheight">60dp</dimen>
+    <dimen name="emailunread">10sp</dimen>
+    <dimen name="mianvierpagerheight">220dp</dimen>
+    <dimen name="mainvpageiamgeheight">180dp</dimen>
+    <dimen name="maintabsize">16sp</dimen>
+    <dimen name="maintabheight">48dp</dimen>
+    <dimen name="topuserlogo">30dp</dimen>
+    <dimen name="moretitleimgleft">15dp</dimen>
+    <dimen name="moretitleleft">15dp</dimen>
+    <dimen name="moretitletop">10dp</dimen>
+    <dimen name="moretitlesize">18sp</dimen>
+    <dimen name="pop_width">700dp</dimen>
+    <dimen name="pop_height">500dp</dimen>
+    <dimen name="sel_people_Grid_width">60dp</dimen>
+    <dimen name="flowcontentsize">18sp</dimen>
+    <dimen name="flowattsize">16sp</dimen>
+    <dimen name="sdicsize">40dp</dimen>
+    <dimen name="sdicdistance">10dp</dimen>
+    <dimen name="success_width">45dp</dimen>
+    <dimen name="detect_out">2dp</dimen>
+    <dimen name="preview_margin">50dp</dimen>
+    <dimen name="dialog_title_height">50dp</dimen>
+    <dimen name="dialog_title_width">300dp</dimen>
+    <dimen name="ofd_dialog_height">400dp</dimen>
+</resources>

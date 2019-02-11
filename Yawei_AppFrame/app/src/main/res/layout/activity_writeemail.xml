@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+	android:focusableInTouchMode="true"
+    android:background="@color/white" >
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        style="@style/titlestype" >
+        <LinearLayout
+            android:id="@+id/LinTopBack"
+            style="@style/titlebutton"
+            android:layout_marginLeft="5.0dp">
+            <ImageView
+                style="@style/titleimagesyple"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goback"
+                style="@style/titletextstyle"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/lin_attach"
+            style="@style/titlebutton"
+            android:layout_toLeftOf="@+id/lin_save">
+            <ImageView
+                style="@style/titleimagesyple"
+                android:src="@drawable/fujian" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择附件"
+                style="@style/titletextstyle"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/lin_save"
+            style="@style/titlebutton"
+            android:layout_toLeftOf="@+id/lin_send">
+            <ImageView
+                style="@style/titleimagesyple"
+                android:src="@drawable/baocun" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存"
+                style="@style/titletextstyle"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/lin_send"
+            style="@style/titlebutton"
+            android:layout_alignParentRight="true">
+            <ImageView
+                style="@style/titleimagesyple"
+                android:src="@drawable/fasong" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送"
+                style="@style/titletextstyle"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+	<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:scrollbars="none"
+        android:layout_below="@id/rl_header">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收件人:"
+                    android:textColor="@color/icontabunsel"
+                    android:textSize="18sp"
+                    android:id="@+id/txtSJ"
+                    android:minHeight="40dp"/>
+                <com.android.yawei.jhoa.ui.MyGridView
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/txtSJ"
+                    android:columnWidth="@dimen/sel_people_Grid_width"
+                    android:layout_toLeftOf="@+id/ibtn_addreceiver"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="auto_fit" />
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/ibtn_addreceiver"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_add_circle_outline"
+                    android:backgroundTint="@color/icontabsel"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginTop="5.0dp"
+                android:background="@drawable/list_divider" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dp"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="标    题:"
+                    android:textColor="@color/icontabunsel"
+                    android:textSize="18sp"
+                    android:minHeight="40dp"/>
+                <EditText
+                    android:id="@+id/et_title"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:paddingLeft="5.0dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/list_divider"/>
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5.0dp"
+                android:background="@null"
+                android:gravity="left|top"
+                android:hint="请点击填写内容..."
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:singleLine="false" />
+            <com.android.yawei.jhoa.ui.MyListView
+                android:id="@+id/listview_attachment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dp"
+                android:cacheColorHint="#00000000"
+                android:divider="@null" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/img_voice"
+        android:background="@drawable/ic_voice"
+        android:backgroundTint="@color/icontabsel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"/>
+</RelativeLayout>

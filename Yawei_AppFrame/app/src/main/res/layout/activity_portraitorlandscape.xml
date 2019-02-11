@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+        android:id="@+id/passwordlayout"
+        style="@style/titlestype" >
+
+        <LinearLayout
+            android:id="@+id/LinTopBack"
+            style="@style/titlebutton"
+            android:layout_marginLeft="5.0dp" >
+            <ImageView
+                style="@style/titleimagesyple"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/goback"
+                style="@style/titletextstyle"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tip"
+            style="@style/toptip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="横竖屏设置" />
+    </RelativeLayout>
+    
+	<TextView 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="当前屏幕方向"
+       android:textColor="@color/black"
+       android:textSize="20sp"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="5dp"/>
+   <RadioGroup 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/srop_radiogrop"
+        android:orientation="vertical"
+        android:layout_marginLeft="18dp">
+        <RadioButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiobutton1"
+            android:text="@string/portraitor"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"/>
+        <RadioButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiobutton2"
+            android:textColor="@color/black"
+            android:text="@string/landspace"
+            android:textSize="16sp"/>
+    </RadioGroup>
+	
+</LinearLayout>

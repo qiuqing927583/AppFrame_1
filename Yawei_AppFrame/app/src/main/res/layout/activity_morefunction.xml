@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/reletivelayout"
+        style="@style/titlestype" >
+        <LinearLayout
+            android:id="@+id/LinTopBack"
+            style="@style/titlebutton"
+            android:layout_marginLeft="5.0dp" >
+            <ImageView
+                style="@style/titleimagesyple"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goback"
+                style="@style/titletextstyle"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/title"
+            style="@style/toptip"
+            android:text="更多"/>
+
+        <LinearLayout
+            android:id="@+id/sure"
+            style="@style/titlebutton"
+            android:layout_alignParentRight="true"
+            android:visibility="gone">
+            <ImageView
+                style="@style/titleimagesyple"
+                android:background="@drawable/ic_check_black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成"
+                style="@style/titletextstyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/redact"
+            style="@style/titlebutton"
+            android:layout_alignParentRight="true">
+            <ImageView
+                style="@style/titleimagesyple"
+                android:background="@drawable/ic_redact"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="编辑"
+                style="@style/titletextstyle"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myapplin"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp">
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="17dp"
+                android:background="#1d8fe1"
+                android:layout_marginLeft="@dimen/moretitleimgleft"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/moretitlesize"
+                android:layout_marginLeft="@dimen/moretitleleft"
+                android:text="我的应用"/>
+        </LinearLayout>
+        <GridView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/myappgridview"
+            android:numColumns="4"
+            android:gravity="center"
+            android:cacheColorHint="@android:color/transparent"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/moreList"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"/>
+</LinearLayout>

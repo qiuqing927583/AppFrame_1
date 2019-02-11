@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">移动框架1</string>
+    <string name="systemtitle1">安全保密管理规定</string>
+    <string name="systemtitle2">　　本系统为非涉密内部办公系统，请您严格遵守以下规定：</string>
+    <string name="systemtitle3">　　1. 不得用本系统处理和传输涉及国家秘密和高度敏感的文件和信息；</string>
+    <string name="systemtitle4">　　2. 不得擅自将本系统内的文件和信息通过互联网或其他渠道扩散；</string>
+    <string name="systemtitle5">　　3. 本设备不要借给他人使用，设备如停用请删除本系统，一旦丢失请立即采取保护措施；</string>
+    <string name="systemtitle6">　　4. 严防本系统及用户名和密码被盗用。</string>
+    <string name="passwordtitle">　您的登录密码过于简单，请修改密码!</string>
+    <!-- 待办排序选项 -->
+    <string name="radiobutton1">电脑按接收时间排序，手机按重要程度排序</string>
+    <string name="radiobutton2">电脑按重要程度排序，手机按重要程度排序</string>
+    <string name="radiobutton3">电脑按接收时间排序，手机按接收时间排序</string>
+    <string name="radiobutton4">电脑按重要程度排序，手机按接收时间排序</string>
+    <!-- 消息推送按钮 -->
+    <string name="mesgopen">开启</string>
+    <string name="mesgclose">关闭</string>
+    <string name="goback">返回</string>
+    <string name="fileDOC">DOC</string>
+    <string name="filePPT">PPT</string>
+    <string name="fileXLS">XLS</string>
+    <string name="filePDF">PDF</string>
+    <string name="fileTXT">TXT</string>
+    <string name="filePicture">图片拍照</string>
+    <string name="portraitor">竖屏</string>
+    <string name="landspace">横屏</string>
+    <string name="abnormal">网络异常，请重新刷新数据</string>
+    <string name="mobilecheck">此设备为初次使用协同办公，请先激活后再使用.</string>
+    <string name="uitext">风格重新设定之后需重新登录才生效。</string>
+    <string name="facebuild">信息采集绑定</string>
+    <string name="db_top">jiyao、急要件|zhuanyiban、转已办|shanchu、删除</string>
+    <string name="db_untop">unjiyao、取消急要件|zhuanyiban、转已办|shanchu、删除</string>
+    <string name="yb">shanchu、删除</string>
+    <string name="draft">shanchu、删除|send、发送</string><!--草稿箱-->
+    <string name="readsend">shanchu、删除</string><!--已发-->
+    <string name="emailend">您确定要办结此件？</string>
+    <!-- 文件选择器专用 -->
+    <string name="multiplechoose">多选模式</string>
+    <string name="toggle">反选</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="allchoose">全选</string>
+    <string name="czmm">重置密码</string>
+    <string name="voiceassistant">智能助理\n  &#160;&#160; 1.在智能助理页面对着话筒说出“协同办公”唤醒办公智能助理。\n  &#160;&#160; 2.紧接着说出想做的事情(例如：“协同办公，我想写邮件”)会进入写邮件界面\n
+    &#160;&#160; 3.现在支持唤醒助手后发出命令“写邮件”，“通讯录”，“打电话”，“发短信”，“待办”，“已办”</string>
+    <string name="setfacetip">设置多方式登录，设置成功之后，可通过登录页点击“多种方式登录”然后选择进入方式进行登录。</string>
+    <string name="detect_no_face">未检测到人脸</string>
+    <string name="detect_face_in">把脸移入框内</string>
+    <string name="detect_zoom_in">手机拿近一点</string>
+    <string name="detect_zoom_out">手机拿远一点</string>
+    <string name="detect_head_up">头抬高些</string>
+    <string name="detect_head_down">头放低些</string>
+    <string name="detect_head_left">向左调整下头部角度</string>
+    <string name="detect_head_right">向右调整下头部角度</string>
+    <string name="detect_occ_face">脸部有遮挡</string>
+    <string name="detect_occ_left_eye">左眼有遮挡</string>
+    <string name="detect_occ_right_eye">右眼有遮挡</string>
+    <string name="detect_occ_nose">鼻子有遮挡</string>
+    <string name="detect_occ_mouth">嘴部有遮挡</string>
+    <string name="detect_left_contour">左脸颊有遮挡</string>
+    <string name="detect_right_contour">右脸颊有遮挡</string>
+    <string name="detect_chin_contour">下巴有遮挡</string>
+    <string name="detect_low_light">光线再亮些</string>
+    <string name="detect_keep">请握稳手机，视线平视手机</string>
+    <string name="detect_standard">请正对手机</string>
+    <string name="detect_timeout">检测超时</string>
+    <string name="liveness_eye">眨眨眼</string>
+    <string name="liveness_eye_left">请眨眨左边眼睛</string>
+    <string name="liveness_eye_right">请眨眨右边眼睛</string>
+    <string name="liveness_mouth">张张嘴</string>
+    <string name="liveness_head_left">向左缓慢转头</string>
+    <string name="liveness_head_right">向右缓慢转头</string>
+    <string name="liveness_head_left_right">摇摇头</string>
+    <string name="liveness_head_up">缓慢抬头</string>
+    <string name="liveness_head_down">缓慢低头</string>
+    <string name="liveness_good">非常好</string>
+    <!--指纹-->
+    <string name="fingerprint_description">请将手指放在指纹传感器中进行指纹识别确认</string>
+    <string name="fingerprint_hint">触觉传感器</string>
+
+    <!-- Button text -->
+    <string name="start_btn">开始</string>
+    <string name="cancel_btn">取消</string>
+
+    <string name="fingerprint_success">指纹识别认证成功</string>
+    <string name="fingerprint_not_recognized">指纹识别认证失败</string>
+
+    <!-- Dialog info -->
+    <string name="no_sensor_dialog_title">没有指纹传感器</string>
+    <string name="no_sensor_dialog_message">在您的设备上未发现指纹传感器，请确认您的设备是否支持指纹识别。</string>
+    <string name="AcquiredGood_warning">图像获得很好</string>
+    <string name="AcquiredImageDirty_warning">指纹图像太吵了由于疑似或检测到传感器上的灰尘。
+        例如,合理报这个经过多次获得不足或实际检测传感器上的灰尘(像素,范围等)。用户预计将采取行动来清洁传感器。</string>
+    <string name="AcquiredInsufficient_warning">指纹图像处理由于太吵(我发现条件。e。干性皮肤)或可能肮脏的传感器。</string>
+    <string name="AcquiredPartial_warning">只有部分指纹图像检测。在认证过程中,用户应该被告知需要怎么样解决这个问题,长按传感器</string>
+    <string name="AcquiredTooFast_warning">指纹图像不完整是由于快速运动。而主要适合线性阵列传感器,这也可能发生如果手指在收购感动。
+        用户应该要求移动较慢的(线性)或离开手指上的传感器了。
+</string>
+    <string name="AcquiredToSlow_warning">指纹图像读取由于缺乏运动。这是最适合于线性阵列传感器,需要一个滑动运动。</string>
+    <string name="ErrorCanceled_warning">
+     操作被取消了,因为指纹传感器不可用，请重新进入此页面。</string>
+    <string name="ErrorHwUnavailable_warning">硬件不可用。稍后再试。</string>
+    <string name="ErrorLockout_warning">操作被取消了因为API锁定是因为太多的尝试。</string>
+    <string name="ErrorNoSpace_warning">返回错误状态登记等操作,操作无法完成,因为没有足够剩余存储来完成操作。</string>
+    <string name="ErrorTimeout_warning">错误状态时返回当前请求已经运行的时间太长。这是为了防止计划无限期等待指纹传感器。
+        超时是平台和传感器——特定的,但通常是大约30秒。
+   </string>
+    <string name="ErrorUnableToProcess_warning">返回错误状态传感器时无法处理当前的图像。</string>
+    <string name="file_provider_name">com.yawei.jhoa.mobile.appframe.fileprovider</string>
+    <string name="qianpi_1">流程意见</string>
+    <string name="qianpi_2">区域签批</string>
+    <string name="qianpi_3">添加意见</string>
+    <string name="qianpi_4">插入文字</string>
+    <string name="qianpi_5">插入图片</string>
+    <string name="qianpi_6">编辑</string>
+    <string name="qianpi_7">签批</string>
+    <string name="qianpi_8">笔设置</string>
+    <string name="qianpi_9">办结</string>
+</resources>

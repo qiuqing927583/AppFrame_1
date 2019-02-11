@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/reletivelayout"
+        style="@style/titlestype" >
+        
+        <LinearLayout
+            android:id="@+id/LinTopBack"
+            style="@style/titlebutton"
+            android:layout_marginLeft="5.0dp" >
+            <ImageView
+                style="@style/titleimagesyple"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goback"
+                style="@style/titletextstyle"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_tip"
+            style="@style/toptip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="添加群组"/>
+
+        <LinearLayout
+             android:id="@+id/LinAdd"
+             style="@style/titlebutton"
+             android:layout_alignParentRight="true">
+             <ImageView
+                 style="@style/titleimagesyple"
+                 android:src="@drawable/baocun" />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="添加"
+                 style="@style/titletextstyle" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reletivelayout"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/linearoutradius"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2.0dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+                <TextView
+                    style="@style/maddletitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="群组名称：" />
+                <EditText
+                    android:id="@+id/EtGroupName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittextcss" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

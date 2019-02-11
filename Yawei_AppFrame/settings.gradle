@@ -1,0 +1,2 @@
+//include ':app', ':aFilechooser', ':appframework', ':cordovalib', ':imagepickerModule', ':photoviewer', ':pdfviewer', ':zxinglibrary', ':facesdk', ':filemanage'
+include ':app'

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<item type="drawable" name="transparent">#0067AC</item>
+<item type="drawable" name="LinerBJ">#31BEFF</item>
+<item type="drawable" name="LinerBJ1">#0000CD</item>
+<item type="drawable" name="LinerBJ2">#FF0000</item>
+<item type="drawable" name="LinerBJ3">#00CD00</item>
+<item type="drawable" name="LinerBJ4">#F5DEB3</item>
+<item type="drawable" name="LinerBJ5">#8B8878</item>
+<item type="drawable" name="LinerBJ6">#00CED1</item>
+<item type="drawable" name="LinerBJ7">#00FA9A</item>
+<item type="drawable" name="LinerBJ8">#CD1076</item>
+<item type="drawable" name="LinerBJ9">#FF3E96</item>
+<item type="drawable" name="LinerBJ10">#FF83FA</item>
+<item type="drawable" name="LinerBJ11">#FAEBD7</item>
+</resources>

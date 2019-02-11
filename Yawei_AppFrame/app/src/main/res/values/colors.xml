@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+     <!-- 黑色 -->
+    <color name="black">#000000</color>
+     <!-- 红色 -->
+    <color name="red">#FF0000</color>
+    <!--Top 蓝色 -->
+    <color name="toplanse">#0067AC</color>
+    <!-- 蓝色 -->
+    <color name="unfocused">#0067AC</color>
+    <color name="aliceblue">#d8e3e6</color>
+    <color name="blue">#0000FF</color>
+    <!-- 紫红色 -->
+    <color name="fuchsia">#FF00FF</color>
+    <color name="oldlace">#FDF5E6</color>
+    <!-- 火砖色 -->
+    <color name="firebrick">#B22222</color>
+     <!-- 绿色 -->
+    <color name="green">#008000</color>
+    <!-- 沙褐色 -->
+    <color name="sandybrown">#F4A460</color>
+    <color name="grey">#808080</color>
+    <!-- 深天蓝色 -->
+    <color name="deepskyblue">#00BFFF</color>
+     <!-- 春绿 -->
+    <color name="spgreen">#00EE76</color>
+     <!-- 中紫罗兰色 -->
+    <color name="mediumvioletred">#C71585</color>
+     <!-- 深粉红色 -->
+    <color name="deeppink">#FF1493</color>
+    <color name="maintabbackground">#ededed</color> 
+    <color name="more_btnsel_bg">#50cccccc</color>
+    <color name="sousuohuise">#F5F5F5</color>
+     <!-- 下拉刷新时，颜色值 -->
+    <color name="swiperefresh_color1">#ff00ddff</color>
+    <color name="swiperefresh_color2">#ffffbb33</color>
+    <color name="swiperefresh_color3">#ffff4444</color>
+    <color name="swiperefresh_color4">#ffaa66cc</color>
+    <color name="gridviewbackground">#ebebeb</color><!-- 更多gridview背景 -->
+    <!-- 橄榄色，禁止登录 -->
+    <color name="olive">#808000</color>
+    <color name="linstart">#f5f5f5</color>
+    <color name="linend">#8faec9</color>
+    <color name="setingline">#ababab</color>
+    <!-- 签批笔的颜色值 -->
+    <color name="pen1">#000000</color>
+    <color name="pen2">#6e6e6e</color>
+    <color name="pen3">#f5f5f5</color>
+    <color name="pen4">#1a79d9</color>
+    <color name="pen5">#001e57</color>
+    <color name="pen6">#592680</color>
+    <color name="pen7">#991700</color>
+    <color name="pen8">#cc4400</color>
+    <color name="pen9">#e6a117</color>
+    <color name="pen10">#ffff00</color>
+    <color name="pen11">#aaff00</color>
+    <color name="pen12">#00994d</color>
+    <color name="colorPrimary">#df614e</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#009688</color>
+    <color name="swipe_color_1">#FF4081</color>
+    <color name="swipe_color_2">#303F9F</color>
+    <color name="swipe_color_3">#F89</color>
+    <color name="swipe_color_4">#DE4</color>
+    <color name="swipe_color_5">#83545454</color>
+    <color name="swipe_color_6">#D1D0D1</color>
+    <color name="swipe_background_color">#FDD</color>
+    <color name="listdivercolor">#e1e3e6</color>
+    <color name="icontabsel">#3296fa</color>
+    <color name="icontabunsel">#a3a5a8</color>
+    <color name="pdfviewground">#e7e7e7</color>
+    <color name="RoundColor">#DAF6FE</color>
+    <color name="TimeTextColor">#FF84AD</color>
+    <color name="RoundFillColor">#45C3E5</color>
+    <color name="RoundHintTextColor">#666666</color>
+    <color name="dialogbutcolor">#009688</color><!--dialog 按钮的颜色-->
+    <color name="TabLayout_tab">#498ffe</color>
+    <color name="TabLayout_unseltext">#808182</color>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="2.0dp" >
+
+  <TextView
+        android:id="@+id/clientIp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/logontime"
+        android:ellipsize="end"
+        android:gravity="bottom"
+        android:singleLine="true"
+        android:layout_margin="10.0dp"
+        android:paddingBottom="5.0dp"
+        android:text="青岛市电子政务和"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/logontime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10.0dp"
+        android:paddingBottom="5.0dp"
+        android:singleLine="true"
+        android:text="2013/03/19"
+        android:textSize="16sp" />
+  
+</RelativeLayout>

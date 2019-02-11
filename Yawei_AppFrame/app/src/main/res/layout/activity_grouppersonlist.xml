@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+    
+    <RelativeLayout
+        android:id="@+id/topreletivelayout"
+        style="@style/titlestype"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/LinTopBack"
+            style="@style/titlebutton"
+            android:layout_marginLeft="5.0dp" >
+            <ImageView
+                style="@style/titleimagesyple"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goback"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                style="@style/titletextstyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinXYJ"
+            style="@style/titlebutton"
+            android:layout_toLeftOf="@+id/LinXGJ">
+            <ImageView
+                style="@style/titleimagesyple"
+                android:src="@drawable/xbjnew" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="写便笺"
+                style="@style/titletextstyle" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/LinXGJ"
+            style="@style/titlebutton"
+            android:layout_toLeftOf="@+id/LinSMRZ"
+            android:layout_marginRight="5dp" >
+            <ImageView
+                style="@style/titleimagesyple"
+                android:src="@drawable/xxwj" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="相关件"
+                style="@style/titletextstyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinSMRZ"
+            style="@style/titlebutton"
+            android:layout_toLeftOf="@+id/LintopGroup"
+            android:layout_marginRight="5dp">
+            <ImageView
+                style="@style/titleimagesyple"
+                android:src="@drawable/morenzu" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设默认组"
+                style="@style/titletextstyle"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/LintopGroup"
+            style="@style/titlebutton"
+            android:layout_alignParentRight="true" 
+            android:layout_marginRight="5dp">
+            <ImageView
+                style="@style/titleimagesyple"
+                android:src="@drawable/zgl01" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定组"
+                style="@style/titletextstyle"/>
+        </LinearLayout>
+            
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="40.0dp"
+        android:layout_below="@id/topreletivelayout"
+        android:background="@color/more_btnsel_bg"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dp"
+            android:layout_weight="8"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5.0dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ss"
+                android:gravity="center_vertical"
+                android:hint="搜索"
+                android:paddingBottom="3.0dp"
+                android:paddingLeft="5.0dp"
+                android:paddingRight="5.0dp"
+                android:paddingTop="5.0dp"
+                android:singleLine="true"
+                android:textSize="12.0dp" />
+
+            <ImageButton
+                android:id="@+id/cancel_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dp"
+                android:background="@null"
+                android:src="@drawable/sc" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/butOksearch"
+            style="@style/butOkSearch"
+            android:layout_marginBottom="3.0dp"
+            android:layout_marginRight="3.0dp"
+            android:layout_marginTop="4.0dp"
+            android:text="搜索" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/selectLinGroup"
+        android:layout_width="match_parent"
+        android:layout_height="40.0dp"
+        android:layout_below="@id/ll_search"
+        android:background="@drawable/bg01"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/LinParent"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dp"
+                android:background="@drawable/qz"
+                android:scaleType="fitXY" />
+
+            <TextView
+                style="@style/toptip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingLeft="5.0dp"
+                android:singleLine="true"
+                android:text="选组:"
+                android:textColor="?attr/title_color" /><!-- @color/toplanse -->
+
+            <TextView
+                android:id="@+id/group_tip"
+                style="@style/toptip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:paddingLeft="10.0dp"
+                android:singleLine="true"
+                android:textColor="?attr/title_color" /><!-- @color/toplanse -->
+
+            <ImageView
+                android:id="@+id/btn_select"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/selectdown"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip_index"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:layout_below="@id/selectLinGroup"><!-- android:layout_marginTop="135.0dp" -->
+        <com.yawei.android.appframework.ui.RefreshLayoutListView
+            android:id="@+id/listView"
+           	android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    
+</RelativeLayout>

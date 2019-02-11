@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="mainvpageiamgeheight">300dp</dimen>
+    <dimen name="mianvierpagerheight">400dp</dimen>
+    <dimen name="sdicsize">30dp</dimen>
+    <dimen name="sdicdistance">20dp</dimen>
+    <dimen name="dialog_title_width">400dp</dimen>
+    <dimen name="ofd_dialog_height">500dp</dimen>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <attr name="title_color" format="reference"/>
+    <attr name="title_image_click" format="reference"/>
+    <attr name="abc_cab_background_top_holo_light" format="reference" />
+    <attr name="guide_round" format="reference" />
+    <declare-styleable name="StickNavLayout">
+        <!--默认是否悬停tab-->
+        <attr name="isStickNav" format="boolean" />
+        <!--距离悬浮的位置-->
+        <attr name="stickOffset" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="recordView">
+        <attr name="hintText" format="string"/>
+        <attr name="playHintText" format="string"/>
+        <attr name="timeTextColor" format="reference"/>
+        <attr name="hintTextSize" format="dimension"/>
+        <attr name="middleLineHeight" format="dimension"/>
+        <attr name="progressSrc" format="reference"/>
+        <attr name="middleLineColor" format="reference"/>
+        <attr name="unit" format="string"/>
+        <attr name="model">
+            <enum name="record_model" value="1"/>
+            <enum name="play_model" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

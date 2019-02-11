@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="categories">
+        <item>  消       息  |1</item>
+        <item>  在线用户 |2</item>
+    </string-array>
+    <string-array name="moreparent">
+        <item>公文管理</item>
+        <item>督查管理</item>
+        <item>信息管理</item>
+        <item>会议接待</item>
+    </string-array>
+    <string-array name="gwgl">
+        <item>收文管理</item>
+        <item>发文管理</item>
+    </string-array>
+    <string-array name="dcgl">
+        <item>批示督查</item>
+        <item>决策督查</item>
+        <item>督查办理</item>
+    </string-array>
+    <string-array name="xxgl">
+        <item>地方信息</item>
+        <item>刊物编辑</item>
+    </string-array>
+    <string-array name="hyjd">
+        <item>会议管理</item>
+        <item>会议室管理</item>
+    </string-array>
+    <string-array name="tabname">
+        <item>待办</item>
+        <item>已办</item>
+        <item>已发</item>
+        <item>草稿</item>
+        <item>联系人</item>
+        <item>更多</item>
+    </string-array>
+    <string-array name="tabname1">
+        <item>更多</item>
+        <item>待办</item>
+        <item>已办</item>
+        <item>已发</item>
+        <item>草稿</item>
+        <item>联系人</item>
+    </string-array>
+    <string-array name="document_swgl">
+        <item>待办</item>
+        <item>在办</item>
+        <item>已办</item>
+        <item>所有</item>
+    </string-array>
+    <string-array name="documentdetaile">
+        <item>详细信息</item>
+        <item>流程信息</item>
+        <item>办理单</item>
+    </string-array>
+    <string-array name="dfxx">
+        <item>信息拟稿</item>
+        <item>已上报</item>
+        <item>收到信息</item>
+        <item>采用信息</item>
+    </string-array>
+    <string-array name="xxlb">
+        <item>业务信息</item>
+        <item>调研信息</item>
+        <item>专报信息</item>
+        <item>约稿信息</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="mainv2option">
+        <item>sms|消息</item>
+        <item>oa|工作</item>
+        <item>address|通讯录</item>
+        <item>self|我的</item>
+    </string-array>
+    <string-array name="mainoption">
+        <item>daiban|待办件</item>
+        <item>yiban|已办件</item>
+        <item>yifa|已发件</item>
+        <item>caogao|草稿箱</item>
+        <item>contact|通讯录</item>
+        <!--<item>chart|沟通</item>-->
+        <item>important|急要件</item>
+        <item>note|记事本</item>
+        <item>more|更多</item>
+    </string-array>
+    <string-array name="moreoption">
+        <item>常用功能|daiban,待办件、yiban,已办件、yifa,已发件、caogao,草稿箱、important,急要件、contact,通讯录、note,记事本、self,我的</item><!--chart,沟通-->
+        <!--<item>办公业务|收文管理、发文管理、批示督查、信息上报、决策督查、会议通知、会议室、请加管理</item>
+        <item>其他|会议室管理、信息库、接待管理、公务邮箱、刊物编辑</item>-->
+    </string-array>
+    <string-array name="moretop_db_pdf">
+        <item>setpen|笔设置</item>
+        <item>inserttext|插入文字</item>
+        <item>edit|编辑</item>
+        <item>handwrite|签批</item>
+        <item>liuchengcontent|流程意见</item>
+        <item>addcontent|添加意见</item>
+        <item>end|办结</item>
+        <!--<item>查看附件</item>-->
+    </string-array>
+    <string-array name="moretop_db_ofd">
+        <item>setpen|笔设置</item>
+        <item>liuchengcontent|流程意见</item>
+        <item>addcontent|添加意见</item>
+        <item>end|办结</item>
+    </string-array>
+    <string-array name="moretop_db_tabLayout_ofd">
+        <item>liuchengcontent|流程意见</item>
+        <item>addcontent|添加意见</item>
+        <item>end|办结</item>
+    </string-array>
+    <string-array name="moretop_yb">
+        <item>liuchengcontent|流程意见</item>
+        <!--<item>查看附件</item>-->
+    </string-array>
+    <string-array name="htmlwirte">
+        <item>setpen|笔设置</item>
+    </string-array>
+    <string-array name="uistylename">
+        <item>风格1</item>
+        <item>风格2</item>
+        <item>风格3</item>
+        <item>风格4</item>
+    </string-array>
+    <string-array name="handtab">
+        <item>签批单</item>
+        <item>其他文件</item>
+    </string-array>
+    <string-array name="handtabnull">
+        <item>签批单</item>
+    </string-array>
+    <!--签批笔颜色-->
+    <string-array name="penColor">
+        <item>0;0;0</item>
+        <item>110;110;110</item>
+        <item>245;245;245</item>
+        <item>24;120;217</item>
+        <item>0;30;87</item>
+        <item>89;38;128</item>
+        <item>153;23;0</item>
+        <item>204;68;0</item>
+        <item>230;161;23</item>
+        <item>255;255;0</item>
+        <item>170;255;0</item>
+        <item>0;153;77</item>
+    </string-array>
+</resources>

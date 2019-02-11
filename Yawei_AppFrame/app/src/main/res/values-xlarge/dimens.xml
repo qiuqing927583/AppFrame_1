@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="emailunread">12sp</dimen>
+    <dimen name="mainv2toptitleheight">70dp</dimen>
+    <dimen name="mianvierpagerheight">350dp</dimen>
+    <dimen name="mainvpageiamgeheight">300dp</dimen>
+    <dimen name="maintabsize">18sp</dimen>
+    <dimen name="maintabheight">55dp</dimen>
+    <dimen name="topuserlogo">40dp</dimen>
+    <dimen name="moretitlesize">20sp</dimen>
+    <dimen name="sel_people_Grid_width">100dp</dimen>
+    <dimen name="sdicsize">50dp</dimen>
+    <dimen name="sdicdistance">20dp</dimen>
+    <dimen name="dialog_title_width">400dp</dimen>
+    <dimen name="ofd_dialog_height">500dp</dimen>
+</resources>

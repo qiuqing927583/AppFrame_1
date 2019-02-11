@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 头部背景 -->
+    <style name="titlestype">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:background">?attr/title_image_click</item>
+    </style>
+    <style name="maingridoption">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+    </style>
+    <style name="maingridemialnum">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginLeft">-20.0dp</item>
+    </style>
+    <style name="topImgLog">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/reletivelayout"
+        style="@style/titlestype" >
+        <LinearLayout
+            android:id="@+id/LinTopBack"
+            style="@style/titlebutton"
+            android:layout_marginLeft="5.0dp" >
+            <ImageView
+                style="@style/titleimagesyple"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goback"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                style="@style/titletextstyle"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/reletivelayout"
+        android:layout_above="@+id/reletiveBottom"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/reletiveBottom"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/list_divider"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="已选择："
+            android:layout_centerVertical="true"
+            android:id="@+id/textUserSize"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/logintextsize"
+            android:layout_toLeftOf="@+id/butSure"
+            android:singleLine="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:text="确定"
+            android:id="@+id/butSure"
+            android:layout_alignParentRight="true"
+            android:background="@color/icontabsel"
+            android:textColor="@color/white"
+            android:layout_marginRight="5dp"
+            android:textSize="@dimen/logintextsize"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

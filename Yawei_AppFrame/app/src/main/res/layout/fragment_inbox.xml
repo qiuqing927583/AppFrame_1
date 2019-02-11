@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/ll_search"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dp"
+        android:background="@color/sousuohuise"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableLeft="@drawable/ss"
+            android:gravity="center_vertical"
+            android:hint="搜索"
+            android:paddingBottom="3.0dp"
+            android:paddingLeft="5.0dp"
+            android:paddingRight="5.0dp"
+            android:paddingTop="5.0dp"
+            android:singleLine="true"
+            android:textSize="12.0dp"
+            android:imeOptions="actionSearch"/>
+
+        <ImageButton
+            android:id="@+id/cancel_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dp"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/sc" />
+    </RelativeLayout>
+    
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip_index"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.yawei.android.appframework.ui.RefreshLayoutListView
+            android:id="@+id/listView"
+           	android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

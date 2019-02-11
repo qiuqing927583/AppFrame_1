@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/rel"
+    	android:layout_centerHorizontal="true"
+    	>
+    	
+    <ImageView
+        android:id="@+id/ItemImage"
+        style="@style/morechildimage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10.0dp" />
+    
+    <ImageView
+        android:id="@+id/ItemImage1"
+        style="@style/morechildimage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10.0dp" />
+
+    <ImageView
+        android:id="@+id/newImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/newversion"
+        style="@style/moreimage"
+        android:layout_alignRight="@id/ItemImage"/>
+
+    <TextView
+        android:id="@+id/ItemText"
+        style="@style/moretextsizestype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ItemImage"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:paddingBottom="10dp" />
+    <TextView
+        android:id="@+id/ItemText1"
+        style="@style/moretextsizestype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ItemImage1"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:paddingBottom="10dp" />
+	</RelativeLayout>
+</RelativeLayout>

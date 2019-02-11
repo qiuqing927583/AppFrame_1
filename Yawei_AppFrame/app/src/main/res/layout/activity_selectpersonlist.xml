@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topreletivelayout"
+        style="@style/titlestype"
+        android:layout_alignParentTop="true" >
+        <LinearLayout
+            android:id="@+id/LinTopBack"
+            style="@style/titlebutton"
+            android:layout_marginLeft="5.0dp" >
+            <ImageView
+                style="@style/titleimagesyple"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/goback"
+                style="@style/titletextstyle"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/toptext"
+            style="@style/toptip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="联系人" />
+        
+        <LinearLayout
+            android:id="@+id/LinXZKJ"
+            style="@style/titlebutton"
+            android:layout_toLeftOf="@+id/LinOk"
+            android:visibility="gone" >
+            <ImageView
+                style="@style/titleimagesyple"
+                android:src="@drawable/xzkj" />
+            <TextView
+                android:id="@+id/tv_xzkj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选中可见"
+                style="@style/titletextstyle"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/LinOk"
+            style="@style/titlebutton"
+            android:layout_toLeftOf="@+id/LinXZQZ" >
+            <ImageView
+                style="@style/titleimagesyple"
+                android:src="@drawable/queding" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                style="@style/titletextstyle"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/LinXZQZ"
+            style="@style/titlebutton"
+            android:layout_toLeftOf="@+id/ll"
+            android:visibility="gone" >
+            <ImageView
+                style="@style/titleimagesyple"
+                android:src="@drawable/xzqz" />
+            <TextView
+                android:id="@+id/tv_xzqz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选中全组"
+                style="@style/titletextstyle"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:id="@+id/ll">
+            
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="40.0dp"
+        android:layout_below="@id/topreletivelayout"
+        android:background="@color/more_btnsel_bg"
+        android:orientation="horizontal" >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dp"
+            android:layout_weight="8"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center" >
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5.0dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ss"
+                android:gravity="center_vertical"
+                android:hint="搜索"
+                android:paddingBottom="3.0dp"
+                android:paddingLeft="5.0dp"
+                android:paddingRight="5.0dp"
+                android:paddingTop="5.0dp"
+                android:singleLine="true"
+                android:textSize="12.0dp" />
+            <ImageButton
+                android:id="@+id/cancel_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dp"
+                android:background="@null"
+                android:src="@drawable/sc" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/butOksearch"
+            style="@style/butOkSearch"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="3.0dp"
+            android:layout_marginRight="3.0dp"
+            android:layout_marginTop="4.0dp"
+            android:text="搜索" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/selectLinGroup"
+        android:layout_width="match_parent"
+        android:layout_height="40.0dp"
+        android:layout_below="@id/ll_search"
+        android:background="@drawable/bg01"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:id="@+id/LinParent"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dp"
+                android:background="@drawable/qz"
+                android:scaleType="fitXY" />
+            <TextView
+                style="@style/toptip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:paddingLeft="5.0dp"
+                android:singleLine="true"
+                android:text="请选择："
+                android:textColor="?attr/title_color" /><!--@color/toplanse  -->
+
+            <TextView
+                android:id="@+id/group_tip"
+                style="@style/toptip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:paddingLeft="10.0dp"
+                android:singleLine="true"
+                android:textColor="?attr/title_color" />
+
+            <ImageView
+                android:id="@+id/btn_select"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/selectdown"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip_index"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:layout_below="@id/selectLinGroup"><!-- android:layout_marginTop="135.0dp" -->
+        <com.yawei.android.appframework.ui.RefreshLayoutListView
+            android:id="@+id/listView"
+           	android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

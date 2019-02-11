@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/sousuohuise"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:id="@+id/topRela">
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:layout_margin="5.0dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/ss"
+            android:gravity="center_vertical"
+            android:hint="搜索"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textSize="16dp"
+            android:imeOptions="actionSearch"/>
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topRela">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listaddress"
+            android:divider="@null"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <!--fab:fab_addButtonColorNormal="#e91e63"//修改meau按钮的背景色
+        fab:fab_addButtonColorPressed="#e91e63"//meau按钮按下的颜色
+        fab:fab_addButtonPlusIconColor="#ec407a"//meau中间 "+" 的颜色
+        fab:fab_labelStyle="@style/fab_labels_style" //title样式，可以修改title的颜色和背景
+        fab:fab_expandDirection="down" 展开方式：有up/down/left/right四个方向，left/right时，Button不可以设置标签文字
+        同时不能设置fab_labelStyle-->
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        fab:fab_addButtonColorNormal="#e91e63"
+        fab:fab_addButtonColorPressed="#e91e63"
+        fab:fab_addButtonPlusIconColor="@color/white"
+        fab:fab_labelStyle="@style/fab_labels_style">
+        <!-- fab:fab_colorNormal="#e91e63"未点击的颜色
+        fab:fab_colorPressed="#00fff2" 点击后的颜色-->
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/customGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#e91e63"
+            fab:fab_icon="@drawable/ic_add"
+            fab:fab_colorPressed="#ec407a"
+            fab:fab_size="mini"
+            fab:fab_title="自定义组"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/voiceSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#e91e63"
+            fab:fab_icon="@drawable/ic_voice"
+            fab:fab_colorPressed="#ec407a"
+            fab:fab_size="mini"
+            fab:fab_title="语音搜索"/>
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+</RelativeLayout>

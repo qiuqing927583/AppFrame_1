@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/reletivelayout"
+        style="@style/titlestype" >
+        <LinearLayout
+            android:id="@+id/LinTopBack"
+            style="@style/titlebutton"
+            android:layout_marginLeft="5.0dp" >
+            <ImageView
+                style="@style/titleimagesyple"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goback"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                style="@style/titletextstyle"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/reply_tip"
+            style="@style/toptip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="设默认组" />
+
+       <LinearLayout
+           android:id="@+id/LinMRZ"
+           style="@style/titlebutton"
+           android:layout_alignParentRight="true" >
+           <ImageView
+               style="@style/titleimagesyple"
+               android:src="@drawable/queding" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="确定"
+               style="@style/titletextstyle"/>
+       </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip_index"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <com.yawei.android.appframework.ui.RefreshLayoutListView
+            android:id="@+id/listView"
+           	android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

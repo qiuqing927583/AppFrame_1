@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <!--姓名-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <TextView
+                    style="@style/groupsubhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp">
+                    <TextView
+                        android:id="@+id/name"
+                        style="@style/grouphead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_toLeftOf="@+id/sendEmail"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sendEmail"
+                        android:background="@drawable/ic_mail_outline"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@drawable/list_divider"/>
+            <!-- 部门 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <TextView
+                    style="@style/groupsubhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="部门"/>
+                <TextView
+                    android:id="@+id/depart"
+                    style="@style/grouphead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@drawable/list_divider"/>
+            <!-- 电话 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <TextView
+                    style="@style/groupsubhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电话"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp">
+                    <TextView
+                        android:id="@+id/phonenum"
+                        style="@style/grouphead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/sendSMS"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sendSMS"
+                        android:background="@drawable/ic_message_sel"
+                        android:layout_toLeftOf="@+id/callPhone"
+                        android:layout_marginRight="15dp"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/callPhone"
+                        android:background="@drawable/ic_phonelink"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@drawable/list_divider"/>
+        </LinearLayout>
+    </ScrollView>
+    <!--fab:fab_addButtonColorNormal="#e91e63"//修改meau按钮的背景色
+        fab:fab_addButtonColorPressed="#e91e63"//meau按钮按下的颜色
+        fab:fab_addButtonPlusIconColor="#ec407a"//meau中间 "+" 的颜色
+    fab:fab_labelStyle="@style/fab_labels_style" //title样式，可以修改title的颜色和背景-->
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        fab:fab_addButtonColorNormal="#e91e63"
+        fab:fab_addButtonColorPressed="#e91e63"
+        fab:fab_addButtonPlusIconColor="@color/white"
+        fab:fab_labelStyle="@style/fab_labels_style" >
+        <!-- fab:fab_colorNormal="#e91e63"未点击的颜色
+        fab:fab_colorPressed="#00fff2" 点击后的颜色-->
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_xyj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#e91e63"
+            fab:fab_icon="@drawable/ic_mail_white_outline"
+            fab:fab_colorPressed="#ec407a"
+            fab:fab_size="mini"
+            fab:fab_title="写便笺"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_sendMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#e91e63"
+            fab:fab_icon="@drawable/ic_message_white"
+            fab:fab_colorPressed="#ec407a"
+            fab:fab_size="mini"
+            fab:fab_title="发消息"
+            android:visibility="gone"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+    
+    <RelativeLayout
+        android:id="@+id/reletivelayout"
+        style="@style/titlestype">
+        <LinearLayout
+            android:id="@+id/LinTopBack"
+            style="@style/titlebutton"
+            android:layout_marginLeft="5.0dp" >
+            <ImageView
+                style="@style/titleimagesyple"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goback"
+                style="@style/titletextstyle"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+        </LinearLayout>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/toptip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:id="@+id/webTitle"/>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/pubilcBut"
+            android:orientation="horizontal"
+            android:layout_toLeftOf="@+id/LinHome">
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/LinHome"
+            style="@style/titlebutton"
+            android:layout_marginRight="5.0dp"
+            android:layout_alignParentRight="true">
+            <!-- <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/shouye" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="首页"
+                android:textColor="#FFFFFF"
+                style="@style/titletextsize" /> -->
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <WebView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loadwebview"/>
+</LinearLayout>

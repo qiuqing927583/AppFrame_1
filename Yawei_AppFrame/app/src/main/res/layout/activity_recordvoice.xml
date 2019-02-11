@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:record_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:minHeight="200dp"
+        android:minWidth="400dp">
+        <com.android.yawei.jhoa.voice.RecordView
+            android:id="@+id/recordView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            record_view:model="play_model"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtvoice"
+            android:textColor="@color/RoundHintTextColor"
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/recordButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/button_recordnormal"
+            android:gravity="center"
+            android:minHeight="0dp"
+            android:padding="5dp"
+            android:text="按住开始说话"
+            android:textColor="#727272" />
+    </LinearLayout>
+</LinearLayout>

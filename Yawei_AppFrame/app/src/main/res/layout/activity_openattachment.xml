@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/reletivelayout"
+        style="@style/titlestype"
+        android:background="#fafafa">
+
+        <LinearLayout
+            android:id="@+id/LinTopBack"
+            style="@style/titlebutton"
+            android:layout_marginLeft="5.0dp"
+            android:background="#fafafa">
+            <ImageView
+                style="@style/titleimagesyple"
+                android:background="@drawable/ic_arrow_left"
+                android:backgroundTint="#808182"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fileName"
+            style="@style/toptip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_toRightOf="@id/LinTopBack"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:ellipsize="middle"
+            android:textColor="#3f3f3f"
+            android:singleLine="true"/>
+    </RelativeLayout>
+
+    <com.photoview.bm.library.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/picPhotoview"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/reletivelayout"
+        android:layout_marginBottom="10dp"/>
+
+    <com.yawei.pdf.pdfviewer.PDFView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pdfview"
+        android:visibility="gone"
+        android:layout_below="@id/reletivelayout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tencentView"
+        android:layout_below="@id/reletivelayout"
+        android:visibility="gone">
+    </RelativeLayout>
+    <com.tencent.tbs.webview.X5WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tencentweb"
+        android:layout_below="@id/reletivelayout"
+        android:visibility="gone">
+    </com.tencent.tbs.webview.X5WebView>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/reletivelayout"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="#0067AC"
+        >
+        <LinearLayout
+            android:id="@+id/LinTopBack"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="5.0dp" >
+            <ImageView
+               android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goback"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/title"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:text="版本信息"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reletivelayout"
+        android:layout_marginTop="50dp"
+        >
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/android_desktop"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/info"
+            android:layout_below="@id/icon"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="智慧政协APP"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_below="@id/info"
+            android:id="@+id/version_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textColor="#ff5d5d5d"
+            android:textSize="20dp"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>
