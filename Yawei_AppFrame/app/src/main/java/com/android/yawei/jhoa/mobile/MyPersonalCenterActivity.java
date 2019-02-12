@@ -48,6 +48,7 @@ public class MyPersonalCenterActivity extends BaseActivity implements OnClickLis
 		try {
 
 			InitView();
+			txtCacheSize.setText(CacheDataManager.getTotalCacheSize(MyPersonalCenterActivity.this));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

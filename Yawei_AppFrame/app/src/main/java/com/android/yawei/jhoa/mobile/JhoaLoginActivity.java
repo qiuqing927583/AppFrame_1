@@ -112,8 +112,8 @@ public class JhoaLoginActivity extends BaseActivity implements OnClickListener, 
 			}
 			if (NetworkUtils.isConnected(getApplicationContext())) {//获取网络状态
 //				InitAppDownDialog();
-//				UpdateThread ut = new UpdateThread(handler, getApplicationContext(), -1);
-//				ut.start();
+				UpdateThread ut = new UpdateThread(handler, getApplicationContext(), -1);
+				ut.start();
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

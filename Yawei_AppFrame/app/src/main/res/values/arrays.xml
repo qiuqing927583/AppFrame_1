@@ -85,8 +85,13 @@
         <item>note|记事本</item>
         <item>more|更多</item>
     </string-array>
+    <!--<string-array name="moreoption">-->
+        <!--<item>常用功能|daiban,待办件、yiban,已办件、yifa,已发件、caogao,草稿箱、important,急要件、contact,通讯录、note,记事本、self,我的</item>&lt;!&ndash;chart,沟通&ndash;&gt;-->
+        <!--&lt;!&ndash;<item>办公业务|收文管理、发文管理、批示督查、信息上报、决策督查、会议通知、会议室、请加管理</item>-->
+        <!--<item>其他|会议室管理、信息库、接待管理、公务邮箱、刊物编辑</item>&ndash;&gt;-->
+    <!--</string-array>-->
     <string-array name="moreoption">
-        <item>常用功能|daiban,待办件、yiban,已办件、yifa,已发件、caogao,草稿箱、important,急要件、contact,通讯录、note,记事本、self,我的</item><!--chart,沟通-->
+        <item>常用功能|contact,通讯录、self,我的</item><!--chart,沟通-->
         <!--<item>办公业务|收文管理、发文管理、批示督查、信息上报、决策督查、会议通知、会议室、请加管理</item>
         <item>其他|会议室管理、信息库、接待管理、公务邮箱、刊物编辑</item>-->
     </string-array>

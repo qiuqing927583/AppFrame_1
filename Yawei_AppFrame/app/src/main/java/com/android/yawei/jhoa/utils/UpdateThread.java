@@ -3,6 +3,7 @@ package com.android.yawei.jhoa.utils;
 import android.content.Context;
 import android.os.Handler;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.android.yawei.jhoa.bean.ClientVersionInfo;
 import com.android.yawei.jhoa.bean.DataSet;
@@ -36,6 +37,7 @@ public class UpdateThread extends Thread {
 	@Override
 	public void run() {
 		String str = WebServiceNetworkAccess.getVersion(Constants.APPGUID);
+		Log.d("version_app",str);
 		if(str == null || str.equals("") || "anyType".equals(str)){
 			//版本检测失败
 			handler.sendEmptyMessage(ERROR);

@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.readystatesoftware.systembartint.SystemBarTintManager;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -45,24 +44,24 @@ public class StatusBarUtil {
         }
     }
 
-    /**
-     * 修改状态栏颜色，支持4.4以上版本
-     *
-     * @param activity
-     * @param colorId
-     */
-    public static void setStatusBarColor(Activity activity, int colorId) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Window window = activity.getWindow();
-            window.setStatusBarColor(activity.getResources().getColor(colorId));
-        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            //使用SystemBarTint库使4.4版本状态栏变色，需要先将状态栏设置为透明
-            transparencyBar(activity);
-            SystemBarTintManager tintManager = new SystemBarTintManager(activity);
-            tintManager.setStatusBarTintEnabled(true);
-            tintManager.setStatusBarTintResource(colorId);
-        }
-    }
+//    /**
+//     * 修改状态栏颜色，支持4.4以上版本
+//     *
+//     * @param activity
+//     * @param colorId
+//     */
+//    public static void setStatusBarColor(Activity activity, int colorId) {
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+//            Window window = activity.getWindow();
+//            window.setStatusBarColor(activity.getResources().getColor(colorId));
+//        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+//            //使用SystemBarTint库使4.4版本状态栏变色，需要先将状态栏设置为透明
+//            transparencyBar(activity);
+//            SystemBarTintManager tintManager = new SystemBarTintManager(activity);
+//            tintManager.setStatusBarTintEnabled(true);
+//            tintManager.setStatusBarTintResource(colorId);
+//        }
+//    }
 
     /**
      * 设置状态栏黑色字体图标，
@@ -188,7 +187,7 @@ public class StatusBarUtil {
     }
 
     //方法二:
-    public static void setStatusBarColor1(Activity activity, int statusColor) {
+    public static void setStatusBarColor(Activity activity, int statusColor) {
         Window window = activity.getWindow();
         //取消状态栏透明
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
@@ -215,10 +214,10 @@ public class StatusBarUtil {
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         if (hideStatusBarBackground) {
             //如果为全透明模式，取消设置Window半透明的Flag
-            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-            //设置状态栏为透明
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                window.setStatusBarColor(Color.TRANSPARENT);
+                window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+                //设置状态栏为透明
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    window.setStatusBarColor(Color.TRANSPARENT);
             }
             //设置window的状态栏不可见
             window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);

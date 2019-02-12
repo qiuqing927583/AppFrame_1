@@ -50,10 +50,10 @@ public class PersonalizedSettingActivity extends Activity implements View.OnClic
                 finish();
                 break;
             case R.id.redcolor:
-                StatusBarUtil.setStatusBarColor1(PersonalizedSettingActivity.this,R.color.red);
+                StatusBarUtil.setStatusBarColor(PersonalizedSettingActivity.this,R.color.red);
                 break;
             case R.id.bluecolor:
-                StatusBarUtil.setStatusBarColor1(PersonalizedSettingActivity.this,R.color.blue);
+                StatusBarUtil.setStatusBarColor(PersonalizedSettingActivity.this,R.color.blue);
 
                 break;
             case R.id.yellowcolor:
